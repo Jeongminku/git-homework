@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>표 스타일</title>
+  <style>
+    table{
+      border:1px solid black;
+      border-collapse: collapse;
+      caption-side: bottom;
+    }
+    th, td{
+      border:1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    .heading {
+      background-color: #eee;
+    }
+  </style>
+</head> 
+<body>
+  <table>
+    <caption>2019 국민 독서실태</caption>
+    <colgroup>
+      <!-- <col span="1" class="heading"> -->
+      <!-- col의 기본값이 1 -->
+      <col class="heading">
+      <col>
+      <col>
+      <!-- <col> 빈칸 2개는 내가 스타일을 적용하지 않는 셀도 실제 표에 맞게 표기해준 것. -->
+    </colgroup>
+    <thead>
+      <tr class="heading">
+        <th>구분</th>
+        <th>성인</th>
+        <th>독서자</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>종이책</th>
+        <td>6.1권</td>
+        <td>11.8권</td>
+      </tr>
+      <tr>
+        <th>전자책</th>
+        <td>1.2권</td>
+        <td>7.1권</td>
+      </tr>
+      <tr>
+        <th class="heading">오디오북</th>
+        <td>0.2권</td>
+        <td>5.5권</td>
+      </tr>      
+    </tbody>
+  </table>
+</body>
+</html>
