@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>css 메뉴</title>
+		<style>
+			a:link, a:visited {
+				color:black;
+				text-decoration: none;
+			}
+			a:hover {
+				background-color:#000;
+				color:#fff;
+			}
+			ul li {
+				float: left;
+			}
+			a {
+				display: block; 
+				padding:10px 20px;
+				background-color: #ccc;
+			}
+			ul {
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul> <!-- <ul type="none" 으로도 가능한듯 -->
+				<li><a href="#">메뉴1</a></li>
+				<li><a href="#">메뉴2</a></li>
+				<li><a href="#">메뉴3</a></li>
+				<li><a href="#">메뉴4</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
+
+<!-- 문제
+1.ul요소의 불릿 없애기 
+    [ul type="none" 으로도 가능한듯]
+2. 목록의 각 항목인 li요소는 왼쪽으로 플로팅
+3. 링크 요소 a는 display속성을 block으로 지정하고 패딩을 10px 20px 지정
+4. 배경색을 회색으로. -->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 문제 4-1번</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 962px;
+        }
+
+        #aside {
+            float: right;
+            width: 200px;
+        } 
+
+        #section {
+            width: 760px;
+            float: left; /* right도 괜찮다.  // 없으면 기본값은 none. 써주는게 좋다고 하셨음. */
+        }
+
+        #wrap {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Header</h1></div>
+    <div id="navigation"><h1>Navigation</h1></div>
+    <div id="wrap">
+       <div id="aside"><h1>Aside</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur doloribus nulla odio nisi animi quasi corporis quibusdam quia nam. Adipisci sunt qui ut ipsa voluptas illum sequi a eveniet?</p>
+       </div>
+       <div id="section"><h1>Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nulla voluptates minus non? Doloremque, eos laboriosam. Exercitationem eligendi aspernatur quia recusandae quibusdam, illo optio, nisi eaque, beatae obcaecati omnis? Culpa.</p>
+       </div>
+    </div>
+    <div id="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>
