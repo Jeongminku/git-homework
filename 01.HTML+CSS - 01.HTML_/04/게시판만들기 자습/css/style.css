@@ -1,6 +1,6 @@
-@charset "utf-8" ;
+@charset "utf-8";
 
-* {
+* { 
     padding: 0;
     margin: 0;
 }
@@ -14,37 +14,36 @@ ul, li {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
-/* 초기화 */
+
+/*  */
 
 .bt_wrap {
     padding-top: 30px;
-    font-size: 0;
     text-align: center;
 }
 
 .bt_wrap a {
     display: inline-block;
+    text-align: center;
     min-width: 80px;
     border: 1px solid black;
-    text-align: center;
     padding: 10px;
-    font-size: 1.4rem;
     border-radius: 2px;
+    font-size: 1.4rem;
 }
 
-.bt_wrap a:hover{
+.bt_wrap a:hover {
     text-decoration: underline;
 }
 
-.bt_wrap a.on {
-    background: #000;
-    color: white;
-}
+/*  */
 
-/* index */
+
+/*  */
+
 .wrap {
     width: 1000px;
     margin: 0 auto;
@@ -52,23 +51,24 @@ a {
 
 .board_list {
     width: 100%;
-    border-top: 1px solid black;
-    border-collapse: collapse;
     font-size: 1.5rem;
+    border-collapse: collapse;
+    border-top: 1px solid red;
 }
 
-.board_list caption{
+.board_list caption {
     padding: 30px;
 }
 
-.board_list th, td {
+.board_list th,
+.board_list td {
     text-align: center;
-    font-size: 1.4rem;
+    word-spacing: 0;
     padding: 10px;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid black;
 }
 
-.board_list td.title > a:hover {
+.board_list .title a:hover{
     text-decoration: underline;
 }
 
@@ -77,8 +77,15 @@ a {
 }
 
 .board_page {
-    padding-top: 30px;
     text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.board_page a:hover {
+    text-decoration: underline;
 }
 
 .board_page a {
@@ -87,45 +94,40 @@ a {
     height: 32px;
     line-height: 32px;
     box-sizing: border-box;
-    font-size: 1.6rem;
 }
 
-.board_page a:hover {
-    text-decoration: underline;
-}
-
-.board_page .bt {
-    letter-spacing: -1px;
+.board_page a.bt {
     font-size: 1.4rem;
+    letter-spacing: -2px;
+}
+
+.board_page a.num {
+    
 }
 
 .board_page a.num.on {
-    display: inline-block;
+    border-color: black;
     background: black;
     color: white;
 }
 
 @media all and (max-width:1000px) {
-    .wrap {
-        width: 100vw;
+    .wrap { width: 100vw;
     }
-}
 
 @media all and (max-width:767px) {
-    .wrap {
-        width: 90vw;
-    }
-
+    .wrap { width: 90vw;}
     .board_list th:nth-of-type(1),
     .board_list td:nth-of-type(1) {
-        display: none;
-    }
-    .board_list th:nth-of-type(3),
-    .board_list td:nth-of-type(3) {
         display: none;
     }
     .board_list th:nth-of-type(4),
     .board_list td:nth-of-type(4) {
         display: none;
     }
+    .board_list th:nth-of-type(5),
+    .board_list td:nth-of-type(5) {
+        display: none;
+    }
+}
 }
