@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- continue 키워드 
+continue 키워드는 반복문 안의 반복 작업을 멈추고 반복문 처음으로 돌아가 다음 반복 작업을 진행합니다.
+         
+-->
+
+<body>
+    <!-- <script>
+        // continue 키워드 활용(1)
+            // 반복문
+            for (let i = 0; i < 5; i++){
+                // 현재 반복 작업을 중지하고 다음 반복 작업을 수행합니다.
+                continue
+                alert(i)
+            }
+            // continue;를 만나면 밑에있는거 보지도않고 그냥 바로 조건문으로 올라감.
+            // continue: continue 아래에 있는 코드를 실행하지 않고
+            // 반복문으로 돌아간다.
+            // 따라서 위 코드를 실행해봤자 경고창은 뜨지 않는다.
+        
+    </script> -->
+    
+    <script>
+        // continue 키워드 활용(2)
+            // 0부터 10까지 짝수 합을 구하는 코드.
+            
+            // 변수선언
+            let output = 0
+
+            // 반복문
+            for (let i = 1; i <= 10; i++) {
+                // 조건문
+                if(i % 2 === 1) {
+                    continue /* 홀수면 현재 반복을 중지하고 다시 for 부터 시작 (다음 반복을 수행한다.) */
+                }
+                output += i
+                
+            }
+            alert(output) /* 실행결과 30 */
+    </script>
+</body>
+</html>

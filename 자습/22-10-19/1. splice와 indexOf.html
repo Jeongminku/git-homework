@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const itemsB = [`사과`,`배`,`바나나`];
+        // undefined
+
+        const index = itemsB.indexOf(`바나나`);
+        // undefined
+
+        // index = 2 배열 내부에 바나나 가 있으므로 해당 요소의 인덱스를 출력함.
+        // console.log(index); 
+
+        itemsB.splice(index,1);
+        // index에서부터 1칸 제거 -> index값을 제거 -> 바나나 제거됨.
+
+        console.log(itemsB);
+        // itemsB에는 사과, 바나나 만 남게됨.
+
+        itemsB.indexOf(`바나나`);
+        // 바나나 라는 값이 itemsB에 없으므로 -1 이라고 출력됨.
+        
+    </script>
+</body>
+</html>
