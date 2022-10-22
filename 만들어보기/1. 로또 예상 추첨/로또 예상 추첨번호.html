@@ -131,7 +131,7 @@
         
         if(start){
                 while(lotto.length < 6){ /* 로또length가 6이 되기전까지 반복해서 실행 (천장 뽑기)    length가 6이 되면 아래를 더이상 시행하지 않음.*/
-                        let num = Math.floor(Math.random() * 7) +1; /* 1부터 45까지의 정수 뽑기. floor는 내림(소수점부분 내림) */ 
+                        let num = Math.floor(Math.random() * 44) +1; /* 1부터 45까지의 정수 뽑기. floor는 내림(소수점부분 내림) */ 
                         /* console.log('num에서 뽑힌거:' + num)  *//* 랜덤숫자가 계속 생성되는거 확인했음. */
                         if (lotto.indexOf(`\n` + num + `번`) === -1) { 
                                 /* lotto 안에 num에 해당하는 숫자가 있는지를 indexOf로 확인한다. -1일경우 아래 push를 통하여 lotto[]안에 넣어준다. */
