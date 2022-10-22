@@ -131,14 +131,20 @@
         
         if(start){
                 while(lotto.length < 6){ /* 로또length가 6이 되기전까지 반복해서 실행 (천장 뽑기)    length가 6이 되면 아래를 더이상 시행하지 않음.*/
-                        let num = Math.floor(Math.random() * 44) +1; /* 1부터 45까지의 정수 뽑기. floor는 내림(소수점부분 내림) */ 
+                        let num = Math.floor(Math.random() * 7) +1; /* 1부터 45까지의 정수 뽑기. floor는 내림(소수점부분 내림) */ 
                         /* console.log('num에서 뽑힌거:' + num)  *//* 랜덤숫자가 계속 생성되는거 확인했음. */
-                        if (lotto.indexOf(num) === -1) { 
+                        if (lotto.indexOf(`\n` + num + `번`) === -1) { 
                                 /* lotto 안에 num에 해당하는 숫자가 있는지를 indexOf로 확인한다. -1일경우 아래 push를 통하여 lotto[]안에 넣어준다. */
                                 /* 비교대상창 .indexOf(비교할 것) === -1         -1이라는것은 비교대상창에 비교할 것이 없다는 뜻  */
                                 lotto.push(`\n` + num + `번`); /* 이후 push로 num 숫자를 넣음.    ////// 번호 출력 가독성을 위해 `\n`으로 띄어쓰기 및 `번`을 넣음.*/
                         }                /* while이므로 (참) 이면 while 내부를 계속 반복 시행. */
                 }                       /* 비교대상창lotto 안에 첫번째 num 숫자가 들어가 있음.  그것과 비교하여 2번째 num숫자를 찾음, 이때 중복된다면 push를 시행하지않으므로 중복숫자가 들어가지 않음. */
+                             
+                
+                /* 문제발생 : indexOf()부분과 push가 다르면 값을 제대로 비교하지 못하여 중복번호가 출력됨. /// 문제 발생시 if내의 indexOf --->  if (lotto.indexOf(num) === -1)*/
+                /* 문제의 원인 : push를 num만 넣는것이 아니므로 if 첫번째는 num, 두번째 push값에는 \n + num + 번 을 넣어버리면 2번째바퀴 돌때 indexOf가 제대로 읽지 못함.*/
+                /* 문제 해결방안 : indexOf() ()값 자체를 \n + num + 번 으로 해주어서 제대로 된 값을 비교하면 오류가 수정됨. 수정 : if (lotto.indexOf(`\n` + num + `번`) === -1)  */
+
         } else {
                 alert(`안녕히가세요`)
         }
