@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        계획 
+        1. 묻기.
+        2. 정수 난수 만들기.
+        3. 서로다른 난수로 6개를 만들기.
+        4. 배열에 넣기.
+        5. 배열을 보여주기.  
+    </title>
+</head>
+<body>
+    <script>
+
+        /* 번호를 뽑겠습니까? */
+        
+/*         let start = confirm(`번호를 뽑아 보겠습니까?`) */
+        
+        
+        /* 1 ~ 45 범위 지정할 객체 설정,   난수 뽑기 */
+/*         function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+        } */
+        
+        // 객체 변수 입력
+/*         let lotto = getRandomArbitrary(1, 45) */
+
+        // document.write(lotto)
+
+        // 소숫점 자리 제거 필요.    .toFixed(매개변수)   -- 매개변수만큼 소수점 뒷자리를 보여줌. 버려지는 숫자는 반올림.  
+
+/*         document.write(lotto.toFixed(0)) */
+
+        // 위 대로 만들면 1개의 숫자를 뽑아서 보여줌.
+        /* 성공 */        
+
+
+        // 필요한것 뽑기를 6회 진행한 6개의 숫자.를 뽑아본다.
+
+        //  function getRandomArbitrary(min, max) {
+        //  return Math.random() * (max - min) + min;
+        //  }
+
+        //  let num = getRandomArbitrary(1, 45)
+
+/*         document.write(num.toFixed(0)) */
+
+/*         console.log(num.toFixed(0)) */
+        
+        /* 배열에 숫자 넣기 */
+        //  let lotto = []
+
+                 
+/*         console.log(lotto) */
+
+        /* 배열에 push 성공. 위 과정을 6개를 한번에 쓰면?. */
+
+        // let lotto = [];
+        // for (let i = 0; i < 6; i++) {
+        //         let num = getRandomArbitrary(1, 45)
+        //         lotto.push(num.toFixed(0))
+
+        // }
+
+        
+
+        // console.log(lotto)
+        // lotto.push(num.toFixed(0));
+        // lotto.push(num.toFixed(0));
+        // lotto.push(num.toFixed(0));
+        // lotto.push(num.toFixed(0));
+        // lotto.push(num.toFixed(0));
+        // lotto.push(num.toFixed(0));
+        
+        /* 실패, let = num 으로 선언해둔게 있어서 한번돌고나서 그 숫자가 반복된 듯.*/
+
+       /* ======================================================================================================================= */
+
+
+        /* 묻기 */
+        //                       쓰기
+
+        /* 랜덤 정수 */
+        // Math.random()
+        // 최댓값과 최솟값 동시 지정하는 공식
+        // Math.random()(최댓값 - 최솟값) + 1 
+
+        // Math.floor(Math.random() * 44) +1             최댓값 최솟값 함수 설정
+
+        /* 6회 반복하기 */
+        
+
+        // const lotto = [];
+        
+        // let i = 0;
+
+        // while(i < 6){
+        //         lotto.push(Math.floor(Math.random() * 7) +1);
+        //         i++
+        // }
+
+        // console.log(lotto)
+        
+        /* 6회 반복 성공 */
+        /* 문제점. 숫자는 랜덤인데 중복이 들어갈 수 있음. */
+        /* indexOf 를 사용하여 중복숫자가 아닌것만 push하기 시도 */
+                //indexOf(찾고싶은 문자열)  있으면 해당 인덱스 번호를 알려준다.
+                //없으면 -1을 보여준다.
+                //공백도 배열로 취급하니까 숫자 셀때 주의할것
+
+
+
+        
+
+        // const lotto = [];
+        
+        // let i = 0;
+        // while(i < 6){
+        //         let num = Math.floor(Math.random() * 7) +1;
+        //         /* console.log('num에서 뽑힌거:' + num)  *//* 랜덤숫자가 계속 생성되는거 확인했음. */
+        //         if (lotto.indexOf(num) == -1) { 
+        //                 /* lotto 안에 num에 해당하는 숫자가 있는지를 indexOf로 확인한다. */
+        //                 /* 비교대상창 .indexOf(비교할 숫자) */
+        //                 lotto.push(num);
+        //         }
+        //         i++;
+        // }
+
+        /* i < n로 하면 n회 뽑기 . */
+
+
+        /* 무조건 천장(6개 배열이 가득차는것)이 필요함. */
+
+        let start = confirm(`로또번호를 뽑아보시겠습니까?`)
+
+        const lotto = [];
+        
+        if(start){
+                while(lotto.length < 6){ /* 로또length가 6이 되기전까지 반복해서 실행 (천장 뽑기)    length가 6이 되면 아래를 더이상 시행하지 않음.*/
+                        let num = Math.floor(Math.random() * 44) +1; /* 1부터 45까지의 정수 뽑기. floor는 내림(소수점부분 내림) */ 
+                        /* console.log('num에서 뽑힌거:' + num)  *//* 랜덤숫자가 계속 생성되는거 확인했음. */
+                        if (lotto.indexOf(`\n` + num + `번`) === -1) { 
+                                /* lotto 안에 num에 해당하는 숫자가 있는지를 indexOf로 확인한다. -1일경우 아래 push를 통하여 lotto[]안에 넣어준다. */
+                                /* 비교대상창 .indexOf(비교할 것) === -1         -1이라는것은 비교대상창에 비교할 것이 없다는 뜻  */
+                                lotto.push(`\n` + num + `번`); /* 이후 push로 num 숫자를 넣음.    ////// 번호 출력 가독성을 위해 `\n`으로 띄어쓰기 및 `번`을 넣음.*/
+                        }                /* while이므로 (참) 이면 while 내부를 계속 반복 시행. */
+                }                         /* 비교대상창lotto 안에 첫번째 num 숫자가 들어가 있음.  그것과 비교하여 2번째 num숫자를 찾음, 이때 중복된다면 push를 시행하지않으므로 중복숫자가 들어가지 않음. */
+                                     
+
+                /* 번호 출력 가독성을 위해 `\n`으로 띄어쓰기 및 `번`을 넣은것으로 문제가 발생함 */
+                
+                /* 문제발생 : indexOf()부분과 push가 다르면 값을 제대로 비교하지 못하여 중복번호가 출력됨. /// 문제 발생시 if내의 indexOf --->  if (lotto.indexOf(num) === -1)*/
+                /* 문제의 원인 : push를 num만 넣는것이 아니므로 [if 첫번째는 num, 두번째 push값에는 \n + num + 번] 을 넣어버리면 2번째바퀴 돌때 indexOf는 (num)과 (\n + num + 번)을 비교하므로 중복숫자를 가려내지 못함.*/
+                /* 문제 해결방안 : indexOf() ()값 자체를 \n + num + 번 으로 해주어서 제대로 된 값을 비교하면 오류가 수정됨. 수정 : if (lotto.indexOf(`\n` + num + `번`) === -1)  */
+                
+                document.write(`이번 예상 당첨 번호는: ${lotto} 입니다. 감사합니다`)             
+                
+        }
+
+        //배열 정리 추가하기.
+
+        else {
+        alert(`안녕히가세요`)
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
