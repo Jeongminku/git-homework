@@ -7,37 +7,21 @@ const email = document.querySelector(`#email`);
 const tel = document.querySelector(`#tel`);
 const submitButton = document.querySelector(`#submit_button`);
 
-submitButton.addEventListener(`click`, function(){
-    //공통적인 확인 : 공백인가 아닌가.(required 여부)
+submitButton.addEventListener(`click`, function(e){
+  const idConf = idConfirm()
+  const pwd1Conf = pwd1Confirm()
+  const pwd2Conf = pwd2Confirm()
+  const fullnameConf = fullnameConfirm()
+  const emailConf = emailConfirm()
+  const telConf = telConfirm()
 
-     
-    // 아이디: 공백여부 / 중복여부
-    // 비밀번호: 공백여부 / 특수문자, 문자, 숫자 포함 형태의 8~15자리를 확인
-    // 비밀번호확인: 공백여부 / 비밀번호와 같은지 안같은지
-    // 이름: 공백여부
-    // 메일주소: 공백여부 / 메일형식에 맞는지(abcd@test.com)
-    // 연락처(필수값 X): 전화번호 형식이 일치하는지(000-1111-1234)
+  if (idConf && pwd1Conf && pwd2Conf && fullnameConf && emailConf && telConf) {
+      document.signup.submit();
+  }
 
 })
-// 각각 확인하는 함수 만들기.
-        // function idConfirm() {}
-        // function pwd1Confirm() {}
-        // function pwd2onfirm() {}
-        // function fullnameConfirm() {}
-        // function emailConfirm() {}
-        // function telConfirm() {}
 
-//방법 1
-    const idConf = idConfirm()
-    const pwd1Conf = pwd1Confirm()
-    const pwd2Conf = pwd2Confirm()
-    const fullnameConf = fullnameConfirm()
-    const emailConf = emailConfirm()
-    const telConf = telConfirm()
-
-    if (idConf && pwd1Conf && pwd2Conf && fullnameConf && emailConf && telConf) {
-        document.signup.submit();
-    }
+    
 
 //방법 2
     // let chkArray = [idConfirm(), pwd1Confirm(), pwd2Confirm(), fullnameConfirm(), emailConfirm(), telConfirm()];
@@ -55,31 +39,29 @@ submitButton.addEventListener(`click`, function(){
     //     document.signup.submit()
     // }
 
-function idConfirm() {
-    const mustId = document.querySelector(".must_id");
-    const overlap = document.querySelector(".overlap");
-    
-    //텍스트가 남아있는 걸 방지하기 위해
-    mustId.style.display = "none";
-    overlap.style.display = "none";
-    
-    //공백일때
-    //replace(/ |0/g,"") : 넓은 공백 또는 0 제거
-    //userid.value.replace(/ |0/g,"")
-    if (!userid.value.replace(/ /g,"")) {
-        mustId.style.display = "block";
-        return false;
-    } else {
-        //유효식이 맞지 않으면
-        if (!idCheck(userid.value)) {
-        overlap.style.display = "block";
-        return false;
-        }
-    }
-    return true;
-}
-
-
+    function idConfirm() {
+      const mustId = document.querySelector(".must_id");
+      const overlap = document.querySelector(".overlap");
+      
+      //텍스트가 남아있는 걸 방지하기 위해
+      mustId.style.display = "none";
+      overlap.style.display = "none";
+      
+      //공백일때
+      //replace(/ |0/g,"") : 넓은 공백 또는 0 제거
+      //userid.value.replace(/ |0/g,"")
+      if (!userid.value.replace(/ /g,"")) {
+          mustId.style.display = "block";
+          return false;
+      } else {
+          //유효식이 맞지 않으면
+          if (!idCheck(userid.value)) {
+          overlap.style.display = "block";
+          return false;
+          }
+      }
+      return true;
+  }
 
 function pwd1Confirm() {
     const mustPwd1 = document.querySelector(".must_pwd1");
@@ -129,7 +111,7 @@ function pwd2Confirm() {
 function fullnameConfirm() {
     const must_Fullname = document.querySelector(".must_fullname")
 
-    must_Fullname.style.display = "none"
+    must_Fullname.style.display = "none !impo"
 
     //공백이면 실행되게 만든 if
     if (!fullname.value.replace(/ /g,"")) {
@@ -143,7 +125,7 @@ function fullnameConfirm() {
 
 function emailConfirm() {
     const mustEmail = document.querySelector(".must_email")
-
+    const regEmail = document.querySelector(".reg_email");
     regEmail.style.display = "none"
 
     if (!email.value.replace(/ /g,"")) {
