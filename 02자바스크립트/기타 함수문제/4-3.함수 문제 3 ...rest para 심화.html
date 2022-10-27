@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열을 입력받아 최소값 구하기   함수명[1,2,3,4]</title>
+</head>
+<body>
+    <script>
+        // const testArray = [52, 33, 263, 21, 19, 63, 755]
+        function min(first, ...rests) {
+            let output
+            let items
+            
+            // 숫자랑 배열을날려주기때문에 받는게 숫자인지 배열인지 판단해야한다.
+            // 매개변수의 자료형이 숫자인가??  배열인가?? 판단
+            // if (Array.isArray(판단하고 싶은 아이 넣기)) 
+            // --> 배열이면 true // 아니면 false값을 뱉음
+            
+            if (Array.isArray(first)) {
+                output = first[0] /* 첫번째 배열값을 넣음. */
+                items = first /* [52 ~ 755] 전체 배열이 다 들어가있음. */
+
+            } else if (typeof(first)=== `number`)/* 숫자면 결과값이 number */{
+                output = first /* 52 값만 들어가있음. */
+                items = rests /* 33, 263, 21, 19, 63, 755가 들어가있음. */
+            }
+             
+
+            /* 비교하기 */
+            for (const item of items) { 
+
+                if (output > item) {  
+                    output = item
+                }
+            }
+
+            return output
+        }
+
+        const testArray = [52, 33, 263, 21, 19, 63, 755]
+        console.log(`최솟값(숫자):  ${min(52, 33, 263, 21, 19, 63, 755)}`)
+        console.log(`최솟값(배열):  ${min(testArray)}`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤년 판독</title>
+</head>
+<body>
+    <script>    
+    // new Date() 는 날짜 객체 .getFullYear는 날짜객체의 함수
+      function isLeapYear(year=new Date().getFullYear) {
+        return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)
+      }
+
+    let result = isLeapYear(2022)
+
+    //   함수 실행
+    //   isLeapYear(2020)
+
+    if (result){
+        console.log(`윤년입니다`)
+    } else {
+        console.log(`윤년이 아닙니다.`)
+    }
+
+
+    //   let num = Number(prompt(`연도입력`,))
+    //   console.log(`${num}년은 윤년입니까? ${isLeapYear(num)}`)
+
+
+
+    </script>
+</body>
+</html>

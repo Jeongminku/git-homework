@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열을 입력받아 최소값 구하기   함수명[1,2,3,4]</title>
+</head>
+<body>
+    <script>
+        // const testArray = [52, 33, 263, 21, 19, 63, 755]
+        function min(...items) {
+            console.log(items)
+            let output = items [0];
+            
+            for (const item of items) { 
+
+                if (output > item) {  
+                    output = item
+                }
+            }
+
+            return output
+        }
+
+        // const testArray = [52, 33, 263, 21, 19, 63, 755]
+        console.log(`최솟값:  ${min(52, 33, 263, 21, 19, 63, 755)}`)
+    </script>
+</body>
+</html>

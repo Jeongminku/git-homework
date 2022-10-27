@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a부터 b까지 더한 값 리턴</title>
+</head>
+<body>
+    <script>
+            // function solution(a,b){
+
+            //     let sum=0;
+
+            //     for(let i=a; i<=b; i++){
+            //     sum+= i;
+            //     }
+            //     return sum;
+            //     }
+
+            // console.log(solution(1,10));
+      
+
+            // function sumAll(a, b) {
+            //     let output = 0;
+            //     for (let i = a; i <=b; i++) {
+            //         output += i;
+            //         console.log(i);
+            //     }
+            //     return output;
+            // }
+
+            function sumAll(a, b) {
+                let output = 0;
+                if (a <= b){
+                    for (let i = a; i <=b; i++) {
+                    output += i;
+                    console.log(i);
+                }} else {{for (let i = b; i <=a; i++) {
+                    output += i;
+                    console.log(i);
+                }}}
+                return output;
+            }
+
+
+            console.log(`합: ${sumAll(1, 10)}`);
+
+
+
+    </script>
+</body>
+</html>

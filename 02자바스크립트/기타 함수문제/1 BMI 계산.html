@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 계산하기</title>
+</head>
+<body>
+    <script>
+        // 비익명 함수
+        // function bmi(weight, height) {
+        //     let result = weight / (height * height);
+        //     return result;
+        // }
+
+
+
+        // 익명 함수
+        // const bmi = function(weight, height){
+        //     let result = weight / (height * height)
+        //     return result;
+        // }
+
+
+        // 화살표 함수
+
+        // const bmi = (weight, height) => {
+        //     let result = weight / (height * height)
+        //     return result;
+        // }
+
+
+
+        
+        // 화살표 함수 2
+        // 화살표안에서 리턴 하나밖에 안한다면?
+        // 중괄호 생략하고 return 안써줘도 가능.
+        const bmi = (weight, height) => weight / (height * height)      
+    
+        let result2 = bmi (60, 160);
+        console.log(result2);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+// 이건 좀 복습이 많이 필요할듯
+// https://recordboy.github.io/2018/02/21/algorithm-star/ 설명 사이트 참고.
+
+
+    // 변수를 선언합니다.
+      let star = "";
+
+
+
+      // 이중 for문 작성
+      for (let i = 0; i < 9; i++){
+        if (i < 5){
+            for (let j = 4; j > i; j--){
+            star += ' ';
+           }
+           for (let k = 0; k <=i*2; k++) {
+            star += `*`;
+           }
+           star += `\n`
+        } else {
+          for (let j = 4; j < i; j++){
+            star += ` `;
+          }
+          for (let k = 17; k > i * 2; k--){
+            star += `*`;
+          }
+          star += '\n'
+        }
+      }
+
+
+      // 출력합니다.
+      console.log(star);
+    </script>
+  </head>
+  <body></body>
+</html>

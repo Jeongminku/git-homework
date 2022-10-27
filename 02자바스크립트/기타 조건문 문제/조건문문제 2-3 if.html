@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 문제 2-3</title>
+</head>
+<body>
+    <script>
+        const math1 = Number(prompt("첫번째 숫자를 입력해주세요",));
+        const math2 = Number(prompt("두번째 숫자를 입력해주세요",));
+        const math3 = Number(prompt("세번째 숫자를 입력해주세요",));
+        
+        
+        if(math1 > math2 && math1 > math3){
+            document.write("최대값: " + math1);
+        }else if(math1 > math2 && math1 < math3){
+            document.write("최대값: " + math3);
+        }else if(math1 < math2 && math2 > math3){
+            document.write(`최대값: ` + math2);
+        }else /* if(math1 < math2 && math2 < math3) */{
+            document.write(`최대값: ` + math3);
+        }
+
+        if(math1 > math2 && math2 < math3){
+            document.write("최소값: " + math2);
+        }else if(math1 > math2 && math2 > math3){
+            document.write("최소값: " + math3);
+        }else if(math1 < math2 && math1 > math3){
+            document.write(`최소값: ` + math3);
+        }else /* if(math1 < math2 && math1 < math3) */{
+            document.write(`최소값: ` + math1);
+        }
+               
+        
+        document.write("합계: " + (math1+math2+math3));
+        document.write("평균값: " + (math1+math2+math3)/3 );
+    </script>
+</body>
+</html>

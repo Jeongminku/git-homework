@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 문제 2-3</title>
+</head>
+<body>
+    <script>
+        var math1 = Number(prompt("첫번째 숫자를 입력해주세요",));
+        var math2 = Number(prompt("두번째 숫자를 입력해주세요",));
+        var math3 = Number(prompt("세번째 숫자를 입력해주세요",));
+        
+        var sum = math1 + math2 + math3;
+        var avg = (math1 + math2 + math3)/3;
+
+        var max = math1;
+        
+        if (max < math2) {max = math2};
+        if (max < math3) {max = math3};
+
+        
+        var min = math1;
+
+        if (min > math2) {min = math2};
+        if (min > math3) {min = math3};
+
+        document.write(`최대값: ` + max + `최소값: ` + min + `합계: ` + sum + `평균: ` + avg);
+
+    </script>
+</body>
+</html>
