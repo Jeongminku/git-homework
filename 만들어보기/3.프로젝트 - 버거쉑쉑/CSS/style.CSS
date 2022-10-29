@@ -1,22 +1,67 @@
-fieldset {
+.header {
+    width: 100%;
+    height: 90px;
+    background: blue;
     
+}
+
+.delvisual {
+    width: 100%;
+    background-color: #60ae2b;
+    margin-bottom: 50px;
+}
+
+
+.deltitle1 {
+    margin: 0 auto;
+    height: 310px;
+    position: relative;
+    width: 1062px;
+    text-align: center;
+    background: url(../img/deltitle.jpg)
+}
+
+.deltitle1 > .sub_deltitle1 > p{
+    margin: 0;
+    padding-top: 100px;
+    color: #fff;
+    font-size: 36px;
+    font-style:italic;
+    font-weight: bold;
+}
+
+.mainbox {
     width: 900px;
-    height: 264px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+.mainbox fieldset {
+    height: 300px;
     border: 1px solid  rgb(100, 167, 11);
+    display: flex;
+    flex-direction: column;
 }
 
 fieldset p {
     text-align: center;
+    
+}
+
+fieldset .deliveryLink {
+    margin: 0 auto;
+    padding-top: 10px;
+    word-spacing: 40px;
+    flex-direction: row;
+
 }
 
 .order_btn {
     position: relative;
-    top: 50px;
-    left: 463px;
-    border: 0;
-    line-height: 2.5;
-    padding: 10px 20px;
-    text-align: ;
+    width: 400px;
+    line-height: 3;
+    border: 0px;
+    margin: 0 auto;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
@@ -29,24 +74,44 @@ fieldset p {
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.order_btn:hover {
-    background-color: rgba(255, 0, 0, 1);
+.order_btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
 }
 
-.order:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-legend {
+fieldset legend {
     background-color: rgb(100, 167, 11);
     color: #fff;
     padding: 4px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
-    
+    font-size: 2em;
 }
 
-input {
-    margin: .4rem;
+.deltitle2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
 }
+
+.deltitle2_underline {
+    width: 100px;
+    height: 1px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #60ae2b;
+}
+
+.delbox {
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: #1d1d1d;
+}
+
