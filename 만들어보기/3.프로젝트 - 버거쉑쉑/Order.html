@@ -45,17 +45,23 @@
                 <table>
                     <tr class="user_table">
                         <th class="tableleng"><h2>이름</h2></th>
-                        <td><input type="text" name="name" id="name" class="table_input" placeholder="받는 분의 이름을 입력해 주세요"></td>
+                        <td class="td_text"><input type="text" name="name" id="name" class="table_input" placeholder="받는 분의 이름을 입력해 주세요"></td>
                     </tr>
                     <tr class="user_table">
                         <th class="tableleng"><h2>휴대폰 번호</h2></th>
-                        <td><input type="tel" name="phone" id="phone" class="table_input" placeholder="핸드폰 번호를 입력해 주세요"></td>
+                        <td class="td_text"><input type="tel" name="phone" id="phone" class="table_input tel" placeholder="핸드폰 번호를 입력해 주세요"><span class="alert_msg reg_tel"></td>
+                        <!-- <td class="telAlert"><i class="fa-solid fa-circle-exclamation"></i></span></td> -->
+                        
+                    </tr>
+                    <tr class="user_table">
+                        <th class="tableleng"><h2>인증 번호</h2></th>
+                        <td class="td_text"><input type="number" name="num" id="num" class="table_input cert_num" placeholder="인증번호를 입력해 주세요"></span></td>
                     </tr>
                 </table>
             </div>
             <br>
             <div class="btn00">
-                <button type="button" class="btn01"><a href="#"><span>인증번호 발송</span></a></button>
+                <button type="button" class="btn01 numSubmit"><a href="#"><span>인증번호 발송</span></a></button>
             </div>
 
             <h3>&nbsp;<i class = "fa-solid fa-key"> </i><span> 주문서 비밀번호</span></h3>
@@ -64,17 +70,17 @@
                 <table>
                     <tr class="user_table">
                         <th class="tableleng"><h2>비밀번호</h2></th>
-                        <td><input type="password" name="pwd1" id="pwd1" placeholder="4~6자리 이내의 숫자로만 입력하세요" minlength="4" maxlength="6"></td>
+                        <td class="td_text"><input type="password" name="pwd1" id="pwd1" placeholder="4~6자리 이내의 숫자로만 입력하세요" minlength="4" maxlength="6"></td>
                     </tr>
                     <tr class="user_table">
                         <th></th>
-                        <td><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 다시 입력하세요" minlength="4" maxlength="6"></td>
+                        <td class="td_text"><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 다시 입력하세요" minlength="4" maxlength="6"></td>
                     </tr>
                 </table>
             </div>
         </br>
             <div class="btn00">
-                <button type="button" class="btn01"><a href="#"><span>비회원주문</span></a></button>
+                <button type="button" class="btn01 btn_order"><a href="#"><span>비회원주문</span></a></button>
             </div>
         </div>
     </div>

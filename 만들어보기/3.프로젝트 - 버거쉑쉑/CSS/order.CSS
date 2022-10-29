@@ -70,7 +70,6 @@ input#check01:checked + label::before{
 }
 
 .btn_auth {
-    display: inline-block;
     float: right;
     border: 0;
     outline: 0;
@@ -89,12 +88,9 @@ input#check01:checked + label::before{
 
 
 .wrap .contentsBox01 .tableleng {
-    width: 160px;
+    width: 100%;
 }
 
-.user_set .user_table td {
-    width: 500px;
-}
 
 .user_set .table_input{
     border: 0;
@@ -118,9 +114,6 @@ input#check01:checked + label::before{
 }
 
 
-.order_pwd .user_table td {
-    width: 500px;
-}
 
 .order_pwd .user_table input{
     border: 0;
@@ -159,3 +152,9 @@ input#check01:checked + label::before{
     cursor: pointer;
 }
 
+/* input 내에 number타입 오른쪽 화살표 up down 없애기 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
