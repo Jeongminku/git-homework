@@ -17,16 +17,14 @@
     <!-- 본문시작 -->
     <div class="wrap">
         <div class="contentsBox01">
-            <h2 class="title02"> 비회원 주문</h2>
-            <h3 class="title01">&nbsp;<i class="fa-solid fa-user"></i> 개인정보 수집</h3>
-            <div class="authWrap">
+            <h2 class="title02"> 비회원 주문</h2> <!-- 비회원 주문 -->
+            <h3 class="title01">&nbsp;<i class="fa-solid fa-user"></i> 개인정보 수집</h3> <!-- 사람 아이콘 n 개인정보 수집 -->
+            <div class="authWrap"> <!-- 이용약관 -->
                 <div class="auth_list open">
                     <div class="auth_title">
-                            <input type="checkbox" id="check01">
-                            <label for="check01"> &nbsp;<span>쉐이크쉑버거 이용약관</span></label>
-                            
-                            
-                        <button class="btn_auth"><i class="fa-solid fa-chevron-down fa-2x"></i></button>
+                        <input type="checkbox" id="check01">
+                        <label for="check01"> &nbsp;<span>쉐이크쉑버거 이용약관</span></label>
+                        <button onclick="opener()" class="btn_auth"><i class="fa-solid fa-chevron-down fa-2x"></i></button><!-- 이용약관 상세보기 클릭버튼 -->
                         <div class="acc_cont animate__animated animate__fadeIn"><p><strong>수집하는 개인정보 항목</strong><br>
                             - 전화번호, 성명, 주소</p><br><p><strong>수집 목적 </strong><br>
                             ① 성명, 주소: 제품의 전달, 청구서, 정확한 제품 배송지의 확보.</p><br><p><strong>개인정보 보유기간 </strong><br>
@@ -39,7 +37,7 @@
             </div>
 
             <br>
-            <h3 class="title03">&nbsp;<i class="fa-solid fa-gear"></i> 비회원 설정</h3>
+            <h3 class="title03">&nbsp;<i class="fa-solid fa-gear"></i> 비회원 설정</h3><!-- 톱니 아이콘 n 비회원설정 -->
             
             <div class="user_set">
                 <table>
@@ -49,8 +47,7 @@
                     </tr>
                     <tr class="user_table">
                         <th class="tableleng"><h2>휴대폰 번호</h2></th>
-                        <td class="td_text"><input type="tel" name="phone" id="phone" class="table_input tel" placeholder="핸드폰 번호를 입력해 주세요"><span class="alert_msg reg_tel"></td>
-                        <!-- <td class="telAlert"><i class="fa-solid fa-circle-exclamation"></i></span></td> -->
+                        <td class="td_text"><input type="tel" name="phone" id="phone" class="table_input tel" placeholder="-없이 핸드폰 번호를 입력해 주세요" maxlength="11"><span class="alert_msg reg_tel"></td>
                         
                     </tr>
                     <tr class="user_table">
@@ -60,11 +57,11 @@
                 </table>
             </div>
             <br>
-            <div class="btn00">
-                <button type="button" class="btn01 numSubmit"><a href="#"><span>인증번호 발송</span></a></button>
+            <div class="btn00"><!-- 인증번호 발송 버튼 -->
+                <button type="button" class="btn01 numSubmit"><span>인증번호 발송</span></button> 
             </div>
 
-            <h3>&nbsp;<i class = "fa-solid fa-key"> </i><span> 주문서 비밀번호</span></h3>
+            <h3>&nbsp;<i class = "fa-solid fa-key"> </i><span> 주문서 비밀번호</span></h3><!-- 열쇠 아이콘 n 주문서 비밀번호 -->
             <div class="order_pwd">
                 <h4><p>주문 내역 확인을 위한 비밀번호를 입력하세요.</p></h4>
                 <table>
@@ -79,7 +76,7 @@
                 </table>
             </div>
         </br>
-            <div class="btn00">
+            <div class="btn00"><!-- 비회원 주문 버튼 -->
                 <button type="button" class="btn01 btn_order"><a href="#"><span>비회원주문</span></a></button>
             </div>
         </div>
