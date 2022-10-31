@@ -13,6 +13,7 @@
 
 
       // 이중 for문 작성
+      // 인터넷 예제
       for (let i = 0; i < 9; i++){
         if (i < 5){
             for (let j = 4; j > i; j--){
@@ -33,9 +34,33 @@
         }
       }
 
+      //선생님 예제
+      let output = '';
+      const size = 5
+
+      for (let i = 1; i <= size; i++){
+        for (let j = size; j > i; j--){
+          output += ' '
+        }
+        for (let k = 0; k < 2 * i - 1; k++){
+          output += '*'
+        }
+        output += '\n'
+      }
+
+      for (let i = size - 1; i > 0; i--){
+        for (let j = size; j > i; j--){
+          output += ' '
+        }
+        for (let k = 0; k <2 * i - 1; k++){
+          output += '*'
+        }
+        output += '\n'
+      }
 
       // 출력합니다.
       console.log(star);
+      console.log(output);
     </script>
   </head>
   <body></body>
