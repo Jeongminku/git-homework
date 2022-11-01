@@ -1,18 +1,18 @@
-.header {
+.header { /* 헤더 --- 임의 */
     width: 100%;
     height: 90px;
     background: blue;
     
 }
 
-.delvisual {
+.delvisual { /* 딜리버리 첫번째 사진(햄버거 쪽) 공간, 바텀여백위해서 마진  */
     width: 100%;
     background-color: #60ae2b;
     margin-bottom: 50px;
 }
 
 
-.deltitle1 {
+.deltitle1 {  /* 딜리버리 첫번째 햄버거 사진 위치 */
     margin: 0 auto;
     height: 310px;
     position: relative;
@@ -21,7 +21,7 @@
     background: url(../img/deltitle.jpg)
 }
 
-.deltitle1 > .sub_deltitle1 > p{
+.deltitle1 > .sub_deltitle1 > p{ /* 첫번째 햄버거 사진 내 글자 */
     margin: 0;
     padding-top: 100px;
     color: #fff;
@@ -30,25 +30,25 @@
     font-weight: bold;
 }
 
-.mainbox {
+.mainbox { /* 딜리버리 버튼모양부터 ~ 오토바이 끝까지 공간. */
     width: 900px;
     margin: 0 auto;
     min-height: 500px;
 }
 
-.mainbox fieldset {
+.mainbox fieldset { /* 딜리버리 네모박스 */
     height: 300px;
     border: 1px solid  rgb(100, 167, 11);
     display: flex;
     flex-direction: column;
 }
 
-fieldset p {
+fieldset p { /* 아이콘 클릭시 해당 어플로 이동합니다  */
     text-align: center;
     
 }
 
-fieldset .deliveryLink {
+fieldset .deliveryLink { /* 딜리버리 네모박스 __ 어플 링크 */
     margin: 0 auto;
     padding-top: 10px;
     word-spacing: 40px;
@@ -56,7 +56,7 @@ fieldset .deliveryLink {
 
 }
 
-.order_btn {
+.order_btn { /* 주문하기 버튼(빨간색) */
     position: relative;
     width: 400px;
     line-height: 3;
@@ -74,13 +74,13 @@ fieldset .deliveryLink {
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.order_btn a {
+.order_btn a { /* 주문하기 버튼 (폰트) */
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
 }
 
-fieldset legend {
+fieldset legend { /* 주문하기 박스 상단 딜리버리 */
     background-color: rgb(100, 167, 11);
     color: #fff;
     padding: 4px 10px;
@@ -89,13 +89,13 @@ fieldset legend {
     font-size: 2em;
 }
 
-.deltitle2 {
+.deltitle2 { /* Now on Delivery 글자 */
     padding-top: 20px;
     text-align: center;
     font-size: 30px;
 }
 
-.deltitle2_underline {
+.deltitle2_underline { /* Now on Delivery 글자 __ 밑에 녹색 언더라인 */
     width: 100px;
     height: 1px;
     text-align: center;
@@ -103,12 +103,12 @@ fieldset legend {
     background-color: #60ae2b;
 }
 
-.delbox {
+.delbox { /* del 바이크 그림 */
     width: 100%;
     text-align: center;
 }
 
-.footer {
+.footer { /* 푸터 ---- 임의 */
     float: left;
     width: 100%;
     height: 400px;
