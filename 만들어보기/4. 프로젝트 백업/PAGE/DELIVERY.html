@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>딜리버리 화면</title>
+    <link rel="stylesheet" href="../CSS/style.CSS">
+    <link rel="stylesheet" href="../CSS/common.CSS">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Fjalla+One&family=Lobster&display=swap');
+    </style>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/common.js"></script>
+    </head>
+</head>
+<body>
+    <!-- header 시작 -->
+    <header>
+        <div class="head">
+            <div class="btn">
+                <button type="button" class="btn__signup"><span>회원가입</span></button>
+                <button type="button" class="btn__order"><span>주문하기</span></button>
+            </div>
+            <div class="nav">
+                <span class="menu_Location"><img src="../IMG/pc_menu01.gif" alt="위치" class="nav__menu"></span>
+                <span class="menu_Brand"><img src="../IMG/pc_menu05.gif" alt="브랜드 스토리" class="nav__menu"></span>
+                <span class="menu_Logo"><img src="http://shakeshack.kr/images/common/ss_logo.png" alt="로고" width="230" height="50"></span>
+                <span class="menu_Delivery"><img src="../IMG/pc_menu06.gif" alt="딜리버리" class="nav__menu"></span>
+                <span class="menu_Food"><img src="../IMG/pc_menu03.gif" alt="푸드" class="nav__menu"></span>
+            </div>
+        </div>    
+            <div class="location">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_gangnam.png" alt="강남">
+                            <span>강남</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_cheongdam.png" alt="청담">
+                            <span>청담</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_doota.png" alt="두타">
+                            <span>두타</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_akplaza.png" alt="분당">
+                            <span>분당</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_starfield.png" alt="고양">
+                            <span>고양</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_incheon.png" alt="인천공항">
+                            <span>인천공항</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_centralcity.png" alt="센트럴시티">
+                            <span>센트럴시티</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_songdo.png" alt="송도">
+                            <span>송도</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_seomyeon.png" alt="서면">
+                            <span>서면</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_jonggak.png" alt="종각">
+                            <span>종각</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_timessquare.png" alt="영등포">
+                            <span>영등포</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>   
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_iparkmall.png" alt="용산">
+                            <span>용산</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_dongseongro.png" alt="대구">
+                            <span>대구</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_daejeon.png" alt="대전">
+                            <span>대전</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_nowon.png" alt="노원">
+                            <span>노원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_coex.png" alt="코엑스">
+                            <span>코엑스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_dongtan.png" alt="동탄">
+                            <span>동탄</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_hongdae.png" alt="홍대">
+                            <span>홍대</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_sillim.png" alt="신림">
+                            <span>신림</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_cheonan.png" alt="천안">
+                            <span>천안</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_gangnamsquare.png" alt="강남스퀘어">
+                            <span>강남스퀘어</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_suyu.png" alt="수유">
+                            <span>수유</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../IMG/icon_location_jamsil.png" alt="잠실">
+                            <span>잠실</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+    </header>
+    <!-- header 끝 -->
+    
+    <!-- 본문시작 -->
+    <main>
+        <div class="wrap">
+            <div class="delvisual"> <!-- 딜리버리 첫번째 사진(햄버거 쪽) 공간 -->
+                <div class="deltitle1">  <!-- 딜리버리 첫번째 햄버거 사진 위치 -->
+                    <div class="sub_deltitle1"> <!-- 첫번째 햄버거 사진 내 글자  -->
+                        <p>쉐이크쉑 딜리버리,
+                        </br>
+                        차원이 다른 딜리버리의 시작</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainbox"> <!-- 딜리버리 버튼모양부터 ~ 오토바이 끝까지 공간. -->
+                <div class="order_box"> <!-- 딜리버리 네모 박스 -->
+                    <fieldset>
+                        <legend>딜리버리</legend> <!-- 주문하기 박스 상단 딜리버리 -->
+                        <p>*아이콘 클릭 시, 해당 어플로 이동합니다.</p> 
+                        <button class="order_btn"><a href="./Order.html">주문하기</a></button> <!-- 주문하기 버튼 -->
+                        <div class="deliveryLink"> <!-- 딜리버리 네모박스 __ 어플 링크 -->
+                            <a href="https://bit.ly/2VHVw5j" target=_blank><img src="../img/del_01.png" alt="해피오더"></a>
+                            <a href="https://share.coupangeats.com/qh5viaDNDeb" target=_blank><img src="../img/del_02.png"  alt="쿠팡"></a>
+                            <a href="https://baeminkr.onelink.me/XgL8/SHAKELIST" target=_blank><img src="../img/del_03.png" alt="배민"></a>
+                            <a href="https://www.yogiyo.co.kr/ss/JgCflg" target=_blank><img src="../img/del_04.png" alt="요기요"></a>
+                        </div>
+                    </fieldset>
+                </div>
+                <p class="deltitle2">Now  on  Delivery</p> <!-- Now on Delivery 글자 -->
+                <p class="deltitle2_underline"></p> <!-- Now on Delivery 글자 __ 밑에 녹색 언더라인 -->
+                <div class="delbox"> 
+                    <img src="../img/del_bike 01.png" alt="delivery"> <!-- 녹색 del바이크 사진 -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 본문 끝 -->
+    
+
+    <!-- footer 시작 -->
+    <footer>
+        <div class="footer__wrap">
+            <div class="footer__Up">
+                <div class="menu">
+                    <span>FOR YOU</span>
+                    <ul>
+                        <li>고객센터</li>
+                        <li>SPC 홈페이지</li>
+                        <li>안전보건경영방침</li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span>SHAKE SHAKE</span>
+                    <ul>
+                        <li>채용안내</li>
+                        <li>매장안내</li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span>SOCIAL</span>
+                    <ul>
+                        <li>인스타그램</li>
+                        <li>네이버 포스트</li>
+                        <li>유튜브</li>
+                        <li>페이스북</li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <div class="footer__Down">
+            <div class="details">
+                <h1><img src="../IMG/ss_logo_footer.png" alt="로고"></h1>
+                <p>2021 SHAKE SHAKE. ALL RIGHTS RESERVED.</p>
+                <br>
+                <p>SOME INFORMATION ON THIS SITE MAY VARY SLIGHTLY BY<br>LOCATION AND IN STADIUMS,<br>EVENT VENUES AND INTERNATIONAL SHACKS.</p>
+                <br>
+                <p class="bottom">영상정보처리기기운영관리방침</p>
+                <div class="fb">
+                    <div class="fb__like">
+                        <span>62k</span>
+                    </div>
+                    <div class="fb__link">
+                        <a href="#" class=""><img src="" alt="좋아요"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer 끝 -->
+</body>
+</html>

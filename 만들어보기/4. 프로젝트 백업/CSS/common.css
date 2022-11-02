@@ -1,0 +1,220 @@
+/* 초기화 */
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  font-size: 10px;
+}
+/* 초기화 */
+
+header {
+  margin: 0 auto;
+  position: relative;
+}
+
+.head {
+  width: 1100px;
+  margin: 0 auto;
+}
+/* 네비게이션 */
+header .nav {
+  width: 1062px;
+  height: 120px;
+  margin: 0 auto;
+  line-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+header .nav > span {
+  width: calc(100% / 5);
+  font-size: 1.5rem;
+  color: #60ae2b;
+  font-weight: 550;
+}
+header .nav > span > img:hover {
+  cursor: pointer;
+}
+/* 네비게이션 */
+
+header .menu_Logo > img {
+  position: relative;
+  top: 13px;
+  right: 5px;
+}
+
+header .nav .nav__menu {
+  height: 14px;
+}
+
+header .btn {
+  width: 170px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 16px;
+  margin-bottom: -20px;
+}
+
+header .btn .btn__signup,
+header .btn .btn__order {
+  width: 70px;
+  height: 25px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border: none;
+  border-radius: 20px;
+  background-color: #60ae2b;
+  color: white;
+}
+
+header .btn .btn__signup > span,
+header .btn .btn__order > span {
+  /* margin-bottom: px; */
+}
+
+header .location {
+  /* width: 100vw; */
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+  border-top: 1px solid black;
+}
+
+header .location > ul {
+  width: 95vw;
+  line-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 28px;
+  /* padding-right: 15px; */
+}
+
+header .location > ul > li {
+  flex-direction: column;
+  text-align: center;
+}
+
+header ul span {
+  color: #60ae2b;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: block;
+  margin-top: -50px;
+}
+
+main .main__img {
+  background-color: #60ae2b;
+  height: 320px;
+  margin: 0 auto;
+}
+
+main > .main__img > .img3 {
+  margin: 0 auto;
+  width: 1062px;
+  height: 320px;
+  background: url(../IMG/sub_visual_brandstory.jpg) no-repeat;
+}
+
+footer {
+  width: 100vw;
+  height: 370px;
+  background: #1d1d1d;
+  text-align: center;
+  margin: 0 auto;
+  clear: both;
+}
+
+footer .footer__wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+footer .footer__Up {
+  max-width: 1062px;
+  padding-top: 40px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .menu {
+  width: 33.33vw;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  text-align: center;
+}
+
+footer .menu span {
+  padding-bottom: 25px;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+footer .menu > ul {
+  font-size: 1.3rem;
+  line-height: 2.1;
+  font-weight: 600;
+  color: #848484;
+}
+
+footer .footer__Down {
+  padding-top: 30px;
+}
+
+footer .details {
+  margin: 0 auto;
+  width: 390px;
+  text-align: center;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+footer .details p {
+  color: #4e4e4e;
+}
+
+footer .details .bottom {
+  color: #999999;
+}
+
+footer .fb {
+  background: white;
+  /* margin: 0 auto; */
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  left: 450px;
+  bottom: 50px;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  background-color: #1877f2;
+}
+
+footer .fb .fb__like {
+  height: 22px;
+  line-height: 22px;
+  background-color: #fff;
+  border-radius: 4px 4px 0px 0px;
+}
+
+footer .fb .fb__like span {
+  font-size: 1.2rem;
+}
+
+.headerFont {
+  font-family: "Lobster", cursive;
+}

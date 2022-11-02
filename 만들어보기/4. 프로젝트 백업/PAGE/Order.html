@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/order.CSS">
+    <link rel="stylesheet" href="../library/animate/animate.css">
+    <link rel="stylesheet" href="../CSS/common.CSS">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Fjalla+One&family=Lobster&display=swap');
+    </style>
+
+    <script src="https://kit.fontawesome.com/ada909235a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="btn">
+                <button type="button" class="btn__signup"><span>회원가입</span></button>
+                <button type="button" class="btn__order"><span>주문하기</span></button>
+            </div>
+            <div class="nav">
+                <span class="menu_Location"><img src="../IMG/pc_menu01.gif" alt="위치" class="nav__menu"></span>
+                <span class="menu_Brand"><img src="../IMG/pc_menu05.gif" alt="브랜드 스토리" class="nav__menu"></span>
+                <span class="menu_Logo"><img src="http://shakeshack.kr/images/common/ss_logo.png" alt="로고" width="230" height="50"></span>
+                <span class="menu_Delivery"><img src="../IMG/pc_menu06.gif" alt="딜리버리" class="nav__menu"></span>
+                <span class="menu_Food"><img src="../IMG/pc_menu03.gif" alt="푸드" class="nav__menu"></span>
+            </div>
+        </div>    
+        <div class="location">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_gangnam.png" alt="강남">
+                        <span>강남</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_cheongdam.png" alt="청담">
+                        <span>청담</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_doota.png" alt="두타">
+                        <span>두타</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_akplaza.png" alt="분당">
+                        <span>분당</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_starfield.png" alt="고양">
+                        <span>고양</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_incheon.png" alt="인천공항">
+                        <span>인천공항</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_centralcity.png" alt="센트럴시티">
+                        <span>센트럴시티</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_songdo.png" alt="송도">
+                        <span>송도</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_seomyeon.png" alt="서면">
+                        <span>서면</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_jonggak.png" alt="종각">
+                        <span>종각</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_timessquare.png" alt="영등포">
+                        <span>영등포</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>   
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_iparkmall.png" alt="용산">
+                        <span>용산</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_dongseongro.png" alt="대구">
+                        <span>대구</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_daejeon.png" alt="대전">
+                        <span>대전</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_nowon.png" alt="노원">
+                        <span>노원</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_coex.png" alt="코엑스">
+                        <span>코엑스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_dongtan.png" alt="동탄">
+                        <span>동탄</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_hongdae.png" alt="홍대">
+                        <span>홍대</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_sillim.png" alt="신림">
+                        <span>신림</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_cheonan.png" alt="천안">
+                        <span>천안</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_gangnamsquare.png" alt="강남스퀘어">
+                        <span>강남스퀘어</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_suyu.png" alt="수유">
+                        <span>수유</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/icon_location_jamsil.png" alt="잠실">
+                        <span>잠실</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 본문시작 -->
+    <main>
+        <div class="wrap">
+            <div class="add_left">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../IMG/shake01.jpg" alt="광고하나"></div>
+                      <div class="swiper-slide"><img src="../IMG/shake02.jpg" alt="광고둘"></div>
+                      <div class="swiper-slide"><img src="../IMG/shake03.jpg" alt="광고셋"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="contentsBox01">
+                <h2 class="title02"> 비회원 주문</h2> <!-- 비회원 주문 -->
+                <h3 class="title01">&nbsp;<i class="fa-solid fa-user"></i> 개인정보 수집</h3> <!-- 사람 아이콘 n 개인정보 수집 -->
+                <div class="authWrap"> <!-- 이용약관 -->
+                    <div class="auth_list open">
+                        <div class="auth_title">
+                            <input type="checkbox" id="check01">
+                            <label for="check01"> &nbsp;<span>쉐이크쉑버거 이용약관</span></label>
+                            <button onclick="opener()" class="btn_auth"><i class="fa-solid fa-chevron-down fa-2x"></i></button><!-- 이용약관 상세보기 클릭버튼 -->
+                            <div class="acc_cont animate__animated animate__fadeIn"><p><strong>수집하는 개인정보 항목</strong><br>
+                                - 전화번호, 성명, 주소</p><br><p><strong>수집 목적 </strong><br>
+                                ① 성명, 주소: 제품의 전달, 청구서, 정확한 제품 배송지의 확보.</p><br><p><strong>개인정보 보유기간 </strong><br>
+                                ① 계약 또는 청약철회 등에 관한 기록 : 6개월<br>
+                                ② 대금결제 및 재화 등의 공급에 관한 기록 : 1년<br>
+                                ③ 소비자의 불만 또는 분쟁처리에 관한 기록 : 1년</p><br><p><strong>비회원 주문 시 제공하신 모든 정보는 상기 목적에 필요한 용도 이외로는 사용되지 않습니다. 기타 자세한 사항은 '개인정보처리방침'을 참고하여주시기 바랍니다.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <h3 class="title03">&nbsp;<i class="fa-solid fa-gear"></i> 비회원 설정</h3><!-- 톱니 아이콘 n 비회원설정 -->
+                
+                <div class="user_set">
+                    <table>
+                        <tr class="user_table">
+                            <th class="tableleng"><h2>이름</h2></th>
+                            <td class="td_text"><input type="text" name="name" id="name" class="table_input" placeholder="받는 분의 이름을 입력해 주세요"></td>
+                        </tr>
+                        <tr class="user_table">
+                            <th class="tableleng"><h2>휴대폰 번호</h2></th>
+                            <td class="td_text"><input type="tel" name="phone" id="phone" class="table_input tel" placeholder="-없이 핸드폰 번호를 입력해 주세요" maxlength="11"><span class="alert_msg reg_tel"></td>
+                            
+                        </tr>
+                        <tr class="user_table">
+                            <th class="tableleng"><h2>인증 번호</h2></th>
+                            <td class="td_text"><input type="number" name="num" id="num" class="table_input cert_num" placeholder="인증번호를 입력해 주세요" maxlength="4" oninput="numberMaxLength(this);"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="btn00"><!-- 인증번호 발송 버튼 -->
+                    <button type="button" class="btn01 numSubmit"><span>인증번호 발송</span></button> 
+                </div>
+
+                <h3>&nbsp;<i class = "fa-solid fa-key"> </i><span> 주문서 비밀번호</span></h3><!-- 열쇠 아이콘 n 주문서 비밀번호 -->
+                <div class="order_pwd">
+                    <h4><p>주문 내역 확인을 위한 비밀번호를 입력하세요.</p></h4>
+                    <table>
+                        <tr class="user_table">
+                            <th class="tableleng"><h2>비밀번호</h2></th>
+                            <td class="td_text td_pwd"><input type="password" name="pwd1" id="pwd1" placeholder="4~6자리 이내의 숫자로만 입력하세요" minlength="4" maxlength="6"><i class="fa-solid fa-eye-slash"></i></td>
+                        </tr>
+                        <tr class="user_table">
+                            <th></th>
+                            <td class="td_text td_pwd"><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 다시 입력하세요" minlength="4" maxlength="6"><i class="fa-solid fa-eye-slash"></i></td>          
+                        </tr>
+                    </table>
+                </div>
+            </br>
+                <div class="btn00"><!-- 비회원 주문 버튼 -->
+                    <button type="button" class="btn01 btn_order"><a href="#"><span>비회원 주문</span></a></button>
+                    <button type="button" class="btn01 btn_reset"><span>주문취소</span></a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 본문 끝 -->
+    
+    <!-- footer 시작 -->
+    <footer>
+        <div class="footer__wrap">
+            <div class="footer__Up">
+                <div class="menu">
+                    <span>FOR YOU</span>
+                    <ul>
+                        <li>고객센터</li>
+                        <li>SPC 홈페이지</li>
+                        <li>안전보건경영방침</li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span>SHAKE SHAKE</span>
+                    <ul>
+                        <li>채용안내</li>
+                        <li>매장안내</li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span>SOCIAL</span>
+                    <ul>
+                        <li>인스타그램</li>
+                        <li>네이버 포스트</li>
+                        <li>유튜브</li>
+                        <li>페이스북</li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <div class="footer__Down">
+            <div class="details">
+                <h1><img src="../IMG/ss_logo_footer.png" alt="로고"></h1>
+                <p>2021 SHAKE SHAKE. ALL RIGHTS RESERVED.</p>
+                <br>
+                <p>SOME INFORMATION ON THIS SITE MAY VARY SLIGHTLY BY<br>LOCATION AND IN STADIUMS,<br>EVENT VENUES AND INTERNATIONAL SHACKS.</p>
+                <br>
+                <p class="bottom">영상정보처리기기운영관리방침</p>
+                <div class="fb">
+                    <div class="fb__like">
+                        <span>62k</span>
+                    </div>
+                    <div class="fb__link">
+                        <a href="#" class=""><img src="" alt="좋아요"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer 끝 -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="../JS/jquery-3.6.0.min.js"></script>
+<script src="../JS/order.js"></script>
+</html>

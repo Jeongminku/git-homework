@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+h2 {
+  font-size: 23px;
+  padding-bottom: 13px;
+}
+
+h3 {
+  font-size: 18px;
+  padding-bottom: 13px;
+}
+
+h4 {
+  font-size: 15px;
+  padding: 10px 0px;
+}
+.footer {
+  float: left;
+  width: 100%;
+  height: 900px;
+  background-color: #1d1d1d;
+}
+
+/* 헤더 푸터 미리 잡음. */
+
+.wrap {
+  /* 배경 */
+  background: wheat;
+}
+
+.add_left {
+  width: 15%;
+  height: 600px;
+  padding-left: 5%;
+  padding-top: 5%;
+  float: left;
+}
+
+.swiper {
+  width: auto;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentsBox01 {
+  /* 콘텐츠 들어가는 박스 전체 */
+  max-width: 776px;
+  margin: 0 auto;
+  background: wheat;
+  padding-bottom: 45px;
+}
+
+.contentsBox01 > h2 {
+  /* 비회원주문, 이름, 휴대폰번호, 인증번호, 비밀번호 */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.acc_cont {
+  /* 이용약관 상세보기 (none 상태) */
+  display: none;
+}
+
+.auth_title {
+  font-size: 15px;
+}
+
+.wrap .contentsBox01 .auth_list {
+  /* 이용약관 흰색배경 */
+  background: white;
+  padding: 30px;
+}
+
+input#check01 {
+  /* 이용약관 옆 체크박스 */
+  display: none;
+}
+
+input#check01 + label {
+  /* 체크박스에 마우스올리면 손가락 */
+  cursor: pointer;
+}
+
+input#check01 + label:before {
+  /* 체크박스 미체크시 흰색박스 */
+  content: "\f0c8";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  vertical-align: middle;
+  font-size: 2em;
+}
+
+input#check01:checked + label::before {
+  /* 체크박스 체크시 검은색 V체크 */
+  content: "\f14a";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2em;
+}
+
+.auth_title > label > span {
+  /* 쉐이크쉑버거 이용약관 */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn_auth {
+  /* 이용약관 상세보기 버튼 */
+  float: right;
+  border: 0;
+  outline: 0;
+  background: white;
+}
+
+.btn_auth .fa-solid {
+  /* 이용약관 상세보기 버튼 마우스 손가락모양 */
+  cursor: pointer;
+}
+
+.wrap .contentsBox01 .user_set {
+  /* 이름,휴대폰번호,인증번호 박스 */
+  background: white;
+  padding: 30px;
+  text-align: left;
+}
+
+.wrap .contentsBox01 .tableleng {
+  /* 이름 박스 */
+  width: 100%;
+}
+
+.user_set .table_input {
+  /* 비회원설정 - input값 박스 */
+  border: 0;
+  border-bottom: 3px solid black;
+  width: 450px;
+  height: 32px;
+}
+
+.user_set .table_input::placeholder {
+  /* 비회원설정 - input값 박스 - placeholder */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.wrap .contentsBox01 .order_pwd {
+  /* 주문서 비밀번호 */
+  background: white;
+  padding: 30px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.order_pwd .user_table input {
+  /* 주문서 비밀번호 - input값 박스 */
+  border: 0;
+  border-bottom: 3px solid black;
+  width: 500px;
+  height: 32px;
+}
+
+.order_pwd .user_table input::placeholder {
+  /* 주문서 비밀번호 - input값 박스 - placeholder */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.btn00 {
+  /* 비회원 주문버튼 가운데정렬 */
+  text-align: center;
+  font-size: 13px;
+}
+
+.btn01 {
+  /* 인증번호, 비회원주문 버튼 모양 */
+  background: rgb(100, 167, 11);
+  border: 0;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+.btn01 a {
+  /* 비회원주문 a태그 */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* input 내에 number타입 오른쪽 화살표 up down 없애기 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.btn_reset {
+  /* 인증번호, 비회원주문 버튼 모양 */
+  background: whitesmoke;
+  border: 0;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+.td_text i {
+  position: relative;
+  left: 94%;
+  bottom: 27px;
+  font-size: 22px;
+  background: none;
+}
